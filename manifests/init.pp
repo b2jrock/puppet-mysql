@@ -56,6 +56,7 @@ class mysql(
 
     configdir          => $configdir,
     globalconfigprefix => $globalconfigprefix,
+    realmysqldir       => $realmysqldir,
     datadir            => $datadir,
     executable         => $executable,
 

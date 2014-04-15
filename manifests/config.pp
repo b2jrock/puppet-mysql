@@ -11,6 +11,7 @@ class mysql::config(
   $globalconfigprefix,
   $datadir,
   $executable,
+  $realmysqldir,
 
   $logdir,
 
@@ -42,7 +43,7 @@ class mysql::config(
   exec { 'init-mysql-db':
     command  => "mysql_install_db \
       --verbose \
-      --basedir=${globalconfigprefix} \
+      --basedir=${realmysqldir} \
       --datadir=${datadir} \
       --tmpdir=/tmp",
     creates  => "${datadir}/mysql",

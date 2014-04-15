@@ -9,6 +9,7 @@ class mysql(
 
   $configdir = undef,
   $globalconfigprefix = undef,
+  $realmysqldir = undef,
   $datadir = undef,
   $executable = undef,
   $logdir = undef,
@@ -28,6 +29,7 @@ class mysql(
     $ensure,
     $configdir,
     $globalconfigprefix,
+    $realmysqldir,
     $datadir,
     $executable,
     $logdir,
